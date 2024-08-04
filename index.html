@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>IdahoJS Example</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="idaho.js"></script>
+    </head>
+    <body>
+        <input type="text" id="index_htm">
+        
+        <input type="text" id="textfield">
+        
+        <br>
+        
+        <textarea id="textfieldarea"></textarea>
+        
+        <br>
+        
+        <input type="button" value="Get" onclick="alert(idahoObjects[0].value); alert(idahoObjects[1].value);">
+        
+        <input type="button" value="Set" onclick="idahoObjects[0].value = 'a'; idahoObjects[1].value = 'b';">
+        
+        <br>
+        
+        <select id="index_html">
+            <option>A</option>
+            <option>B</option>
+        </select>
+        
+        <script>
+            idahoInitialize();
+        </script>
+    </body>
+</html>

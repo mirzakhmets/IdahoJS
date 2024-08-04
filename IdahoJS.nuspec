@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="100.0.0.1">
+        <id>IdahoJS</id>
+        <version>1.0.0</version>
+        <title>IdahoJS</title>
+        <authors>OVG-Developers</authors>
+        <owners>Mirzakhmet Syzdykov</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Web framework for controller and data synchronization</description>
+        <releaseNotes>Initial 1.0.0 release</releaseNotes>
+        <copyright>Copyright 2024 OVG-Developers</copyright>
+        <language>en-US</language>
+        <icon>IdahoJS.png</icon>
+        <tags>web http json url parsing controller</tags>
+        <summary>Web framework</summary>
+    </metadata>
+    <files>
+        <file src="idaho.js" target="idaho.js" />
+        <file src="IdahoJs.png" target="IdahoJs.png" />
+        <file src="index.html" target="index.html" />
+        <file src="index_lang.html" target="index_lang.html" />
+        <file src="Introduction-IdahoJS.pdf" target="Introduction-IdahoJS.pdf" />
+    </files>
+</package>

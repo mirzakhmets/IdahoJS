@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="idaho.js"></script>
+
+        <script>
+            idahoControllers.push ({
+                path: "index_lang.html",
+                args: [ "lang_en_us" ], /* optional */
+                html_selector: "#doc_element",
+                controller: function (args) { }
+            });
+
+            idahoControllers.push ({
+                path: "index_lang.html",
+                args: [ "lang_en_uk" ], /* optional */
+                html_selector: "#doc_element_uk",
+                controller: function (args) { }
+            });
+
+            idahoObjects.push ({
+                html_selector: "#doc_element",
+                url: "api.php", /* optional */
+                get value() { return idahoGetValue(this); },
+                set value(v) { idahoSetValue(this, v); }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="doc_element">
+            Text in English (US)
+        </div>
+
+        <div id="doc_element_uk">
+            Text in English (UK)
+        </div>
+
+        <script>
+            idahoInitialize();
+        </script>
+    </body>
+</html>
