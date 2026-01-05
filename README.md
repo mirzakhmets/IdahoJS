@@ -1,2 +1,2 @@
 # IdahoJS
- Web framework
+ Web framework for data synchronization and control
